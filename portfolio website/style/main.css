@@ -3,10 +3,17 @@
 :root {
   --main-bg: #2c3639;
   --main-color: #dcd7c9;
+  --nav-border: #a27b5c;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg);
 }
