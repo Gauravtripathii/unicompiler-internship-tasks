@@ -13,19 +13,19 @@ profile.addEventListener("mouseout", () => {
   profileTxt.style.fontSize = "0";
 });
 
-var education = document.querySelector(".education");
-var educationImg = education.firstElementChild;
-var educationTxt = education.childNodes[3];
+var experience = document.querySelector(".experience");
+var experienceImg = experience.firstElementChild;
+var experienceTxt = experience.childNodes[3];
 
-education.addEventListener("mouseover", () => {
-  educationImg.style.width = "0";
-  educationImg.style.height = "0";
-  educationTxt.style.fontSize = "60px";
+experience.addEventListener("mouseover", () => {
+  experienceImg.style.width = "0";
+  experienceImg.style.height = "0";
+  experienceTxt.style.fontSize = "60px";
 });
-education.addEventListener("mouseout", () => {
-  educationImg.style.width = "150px";
-  educationImg.style.height = "150px";
-  educationTxt.style.fontSize = "0";
+experience.addEventListener("mouseout", () => {
+  experienceImg.style.width = "150px";
+  experienceImg.style.height = "150px";
+  experienceTxt.style.fontSize = "0";
 });
 
 var skills = document.querySelector(".skills");

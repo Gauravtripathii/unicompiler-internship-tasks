@@ -29,7 +29,7 @@
   background-color: var(--about-box1);
 }
 
-.about > .education {
+.about > .experience {
   background-color: var(--about-box2);
 }
 
@@ -49,4 +49,5 @@
   font-weight: 800;
   transition: 0.5s ease;
   cursor: default;
+  color: white;
 }
