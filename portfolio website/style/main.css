@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Notable&family=Solway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Notable&family=Open+Sans&family=Solway&display=swap');
 
 :root {
   --main-bg: #2c3639;
   --main-color: #dcd7c9;
   --nav-border: #a27b5c;
+
+  /* about page */
+  --about-box1: #fb3f9e;
+  --about-box2: #a2f804;
+  --about-box3: #68d27a;
+  --about-box4: #8b1f6d;
 }
 
 * {
