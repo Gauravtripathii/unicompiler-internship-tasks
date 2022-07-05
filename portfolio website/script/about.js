@@ -57,3 +57,27 @@ qualifications.addEventListener("mouseout", () => {
   qualificationsImg.style.height = "150px";
   qualificationsTxt.style.fontSize = "0";
 });
+
+// FOR VIEW BOXES
+
+// profile view
+var profileViewBox = document.querySelector(".view-profile");
+var closeProfile = document.querySelector(".back-profile");
+
+profile.addEventListener("click", () => {
+  profileViewBox.style.display = "flex";
+});
+closeProfile.addEventListener("click", () => {
+  profileViewBox.style.display = "none";
+});
+
+// experience view
+var experienceViewBox = document.querySelector(".view-experience");
+var closeExperience = experienceViewBox.childNodes[1];
+
+experience.addEventListener("click", () => {
+  experienceViewBox.style.display = "flex";
+});
+closeExperience.addEventListener("click", () => {
+  experienceViewBox.style.display = "none";
+});
