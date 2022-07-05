@@ -81,3 +81,25 @@ experience.addEventListener("click", () => {
 closeExperience.addEventListener("click", () => {
   experienceViewBox.style.display = "none";
 });
+
+// skills view
+var skillsViewBox = document.querySelector(".view-skills");
+var closeSkills = skillsViewBox.childNodes[1];
+
+skills.addEventListener("click", () => {
+  skillsViewBox.style.display = "flex";
+});
+closeSkills.addEventListener("click", () => {
+  skillsViewBox.style.display = "none";
+});
+
+// qualifications view
+var qualificationsViewBox = document.querySelector(".view-qualifications");
+var closeQualifications = qualificationsViewBox.childNodes[1];
+
+qualifications.addEventListener("click", () => {
+  qualificationsViewBox.style.display = "flex";
+});
+closeQualifications.addEventListener("click", () => {
+  qualificationsViewBox.style.display = "none";
+});
