@@ -43,19 +43,19 @@ skills.addEventListener("mouseout", () => {
   skillsTxt.style.fontSize = "0";
 });
 
-var qualifications = document.querySelector(".qualifications");
-var qualificationsImg = qualifications.firstElementChild;
-var qualificationsTxt = qualifications.childNodes[3];
+var connect = document.querySelector(".connect");
+var connectImg = connect.firstElementChild;
+var connectTxt = connect.childNodes[3];
 
-qualifications.addEventListener("mouseover", () => {
-  qualificationsImg.style.width = "0";
-  qualificationsImg.style.height = "0";
-  qualificationsTxt.style.fontSize = "60px";
+connect.addEventListener("mouseover", () => {
+  connectImg.style.width = "0";
+  connectImg.style.height = "0";
+  connectTxt.style.fontSize = "60px";
 });
-qualifications.addEventListener("mouseout", () => {
-  qualificationsImg.style.width = "150px";
-  qualificationsImg.style.height = "150px";
-  qualificationsTxt.style.fontSize = "0";
+connect.addEventListener("mouseout", () => {
+  connectImg.style.width = "150px";
+  connectImg.style.height = "150px";
+  connectTxt.style.fontSize = "0";
 });
 
 // FOR VIEW BOXES
@@ -93,13 +93,13 @@ closeSkills.addEventListener("click", () => {
   skillsViewBox.style.display = "none";
 });
 
-// qualifications view
-var qualificationsViewBox = document.querySelector(".view-qualifications");
-var closeQualifications = qualificationsViewBox.childNodes[1];
+// connect view
+var connectViewBox = document.querySelector(".view-connect");
+var closeconnect = connectViewBox.childNodes[1];
 
-qualifications.addEventListener("click", () => {
-  qualificationsViewBox.style.display = "flex";
+connect.addEventListener("click", () => {
+  connectViewBox.style.display = "flex";
 });
-closeQualifications.addEventListener("click", () => {
-  qualificationsViewBox.style.display = "none";
+closeconnect.addEventListener("click", () => {
+  connectViewBox.style.display = "none";
 });
