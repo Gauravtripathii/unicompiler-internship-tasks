@@ -23,3 +23,9 @@
   height: 100vh;
   background-color: var(--main-bg);
 }
+
+::selection {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  text-shadow: 0 0 5px orangered;
+}
