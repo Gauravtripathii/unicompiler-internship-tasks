@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Quiz from "./components/Quiz";
+import { useState, useEffect } from "react";
 
 function App() {
+  const [quizes, setQuizes] = useState([]);
+
+  useEffect(() => {
+    fetch("https://the-trivia-api.com/api/questions").then((response) => {
+      return response.json();
+    }).then((data) => {
+      setQuizes(data);
+    })
+  }, []);
+
+  const [count, setCount] = useState(0);
+
+  function addCountHandler() {
+    setCount(count+1);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <h1>Quizzer!</h1>
+      {quizes.map((quiz) => (
+        <Quiz key={quiz.key} question={quiz.question} correctAnswer={quiz.correctAnswer} incorrectAnswers={quiz.incorrectAnswers} addCountHandler={addCountHandler} />
+      ))}
+      <footer>Score : {count}/10</footer>
     </div>
   );
 }
