@@ -24,7 +24,7 @@ function App() {
       {quizes.map((quiz) => (
         <Quiz key={quiz.key} question={quiz.question} correctAnswer={quiz.correctAnswer} incorrectAnswers={quiz.incorrectAnswers} addCountHandler={addCountHandler} />
       ))}
-      <footer>Score : {count}/10</footer>
+      <div className="score">{count}/10</div>
     </div>
   );
 }

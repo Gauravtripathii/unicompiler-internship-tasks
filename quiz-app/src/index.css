@@ -38,6 +38,7 @@
   cursor: pointer;
   padding-left: 30px;
   margin-top: 10px;
+  border: 1px solid #66BFBF;
 }
 
 .quiz li:hover {
@@ -47,16 +48,31 @@
 .correct-selected {
   background-color: greenyellow;
 }
+.correct-selected li {
+  border-color: greenyellow;
+}
 
 .incorrect-selected {
   background-color: #FF0063;
 }
+.incorrect-selected li {
+  border-color: #FF0063;
+}
 
-footer {
-  text-align: center;
+.score {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #293462;
   font-size: 40px;
-  margin: 15px;
   font-weight: bolder;
-  letter-spacing: 5px;
   color: #293462;
+  box-shadow: 0 0 7px white;
+  text-shadow: 0 0 7px white;
 }
