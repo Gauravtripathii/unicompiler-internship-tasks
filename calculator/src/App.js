@@ -1,8 +1,9 @@
+import Calculator from "./components/Calculator";
 
 function App() {
   return (
-    <div>
-      <h3>Hello, There!</h3>
+    <div className="container">
+      <Calculator />
     </div>
   );
 }
