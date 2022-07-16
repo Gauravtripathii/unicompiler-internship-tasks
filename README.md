@@ -7,3 +7,7 @@
 ## Task 2 - Quiz App
 
 ![Quiz App](./screenshots/task2.gif "Quiz App")
+
+## Task 3 - Calculator
+
+![Calculator](./screenshots/task3.gif "Calculator")
