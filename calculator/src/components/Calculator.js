@@ -5,9 +5,14 @@ function Calculator() {
   const inputBox = useRef();
 
   function buttonClickHandler(event) {
-    if (event.currentTarget.innerText === "=") {
-      console.log(eval(inputBox.current.value));
-      inputBox.current.value = 0;
+    if (event.currentTarget.innerText === "⌫") {
+      inputBox.current.value = inputBox.current.value.substr(0, inputBox.current.value.length-1);
+    } else if (event.currentTarget.innerText === "x-1") {
+      inputBox.current.value = inputBox.current.value ** -1;
+    } else if (event.currentTarget.innerText === "C") {
+      inputBox.current.value = "";
+    } else if (event.currentTarget.innerText === "=") {
+      inputBox.current.value = eval(inputBox.current.value);
     } else {
       inputBox.current.value += event.currentTarget.innerText;
     }
@@ -22,6 +27,7 @@ function Calculator() {
           <span onClick={buttonClickHandler}>
             x<sup>-1</sup>
           </span>
+          <span onClick={buttonClickHandler}>⌫</span>
           <span onClick={buttonClickHandler}>C</span>
         </p>
         <p>
@@ -45,7 +51,7 @@ function Calculator() {
         <p>
           <span onClick={buttonClickHandler}>0</span>
           <span onClick={buttonClickHandler}>.</span>
-          <span onClick={buttonClickHandler}>=</span>
+          <span onClick={buttonClickHandler} class={classes.equalto}>=</span>
           <span onClick={buttonClickHandler}>/</span>
         </p>
       </div>
@@ -54,7 +60,3 @@ function Calculator() {
 }
 
 export default Calculator;
-
-
-// THE EVAL IS WORKING, SOMETHING HAPPENES WHEN NUMBER GOES BELOW ZERO, BUT THAT IS JAVASCRIPT'S PROBLEM, NOT YOUR'S. YOUR CODE IS PERFECTLY FINE UPTILL NOW (PLEASE DON'T MESS UP). SO, JUST ADD A BACKSPACE BUTTON AS I KIND OF FORGOT. ADD THAT RANDOM MATHS FUN FACT API THING YOU HAVE BEEN THINKING ABOUT AND FINALLY STYLE THIS SHIT UP.
-// - past gaurav ;-)
