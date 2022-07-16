@@ -11,3 +11,9 @@
 ## Task 3 - Calculator
 
 ![Calculator](./screenshots/task3.gif "Calculator")
+
+## Socials :
+
+- [LinkedIn](https://www.linkedin.com/in/gaurav-kumar-tripathii/)
+- [GitHub](https://www.linkedin.com/in/gaurav-kumar-tripathii/)
+- [FrontEndMentor](https://www.frontendmentor.io/profile/Gauravtripathii)
