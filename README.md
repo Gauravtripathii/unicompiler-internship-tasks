@@ -15,5 +15,5 @@
 ## Socials :
 
 - [LinkedIn](https://www.linkedin.com/in/gaurav-kumar-tripathii/)
-- [GitHub](https://www.linkedin.com/in/gaurav-kumar-tripathii/)
+- [GitHub](https://github.com/Gauravtripathii/)
 - [FrontEndMentor](https://www.frontendmentor.io/profile/Gauravtripathii)
